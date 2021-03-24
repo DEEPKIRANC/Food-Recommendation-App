@@ -35,6 +35,12 @@ export default function App() {
         description:
           "It is a vegetarian food item that originates from Gujarat. It is made with gram flour and subsequently steamed. Dhokla can be eaten for breakfast, as the main course, as a side dish, or as a snack. It is often served with tamarind chutney or green coriander or mint chutney.",
         rating: "4/5"
+      },
+      {
+        dishName: "Jalebi",
+        description:
+          "It is hard to pinpoint exactly where it has originated from. It is a melt-in-the-mouth sweet. It is made by deep-frying a wheat flour batter in circular shapes, which are then soaked in sugar syrup. It’s a Mithai, you just can’t resist.",
+        rating: "4/5"
       }
     ],
     "North Indian": [
@@ -163,6 +169,27 @@ export default function App() {
             >
               {cuisine}
             </button>
+          ))}
+        </div>
+        <center>
+          <span style={{ fontSize: "0.75rem", color: "white" }}>
+            <strong>(Click on these buttons to see relevant content)</strong>
+          </span>
+        </center>
+      </div>
+      <div
+        class="maincontent"
+        style={{ backgroundColor: "var(--secondaryColor)" }}
+      >
+        <div class="dishesView">
+          {indiancuisine["Popular"].map((dish) => (
+            <div class="dishCard">
+              <h2>
+                <u>{dish.dishName}</u>
+              </h2>
+              <p style={{ textAlign: "justify" }}>{dish.description}</p>
+              <h4>Rating : {dish.rating}</h4>
+            </div>
           ))}
         </div>
       </div>
