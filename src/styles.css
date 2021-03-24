@@ -1,6 +1,7 @@
 body {
   margin: 0 auto;
   font-family: "Ubuntu", sans-serif;
+  --primaryColor: #9d174d;
 }
 .App {
   font-family: sans-serif;
@@ -8,7 +9,7 @@ body {
 }
 
 .header {
-  background-color: #9d174d;
+  background-color: var(--primaryColor);
   padding: 1.5rem;
   color: white;
   text-align: center;
@@ -44,4 +45,27 @@ body {
   margin-top: 0.5rem;
   margin-left: 0.5rem;
   text-align: center;
+}
+.maincontent {
+  padding: 1rem;
+  background-color: var(--primaryColor);
+}
+.cuisineList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.cuisineNames {
+  margin-left: 0.5rem;
+  padding: 0.5rem;
+  background-color: var(--primaryColor);
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  font-family: "Ubuntu";
+}
+.cuisineNames:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
 }
