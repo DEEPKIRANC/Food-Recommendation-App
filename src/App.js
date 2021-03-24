@@ -2,7 +2,7 @@ import { React, useState } from "react";
 import "./styles.css";
 
 export default function App() {
-  const [cuisine, setCuisine] = useState("");
+  const [selectedCuisine, setCuisine] = useState("Popular");
 
   const indiancuisine = {
     Popular: [
@@ -182,7 +182,7 @@ export default function App() {
         style={{ backgroundColor: "var(--secondaryColor)" }}
       >
         <div class="dishesView">
-          {indiancuisine["Popular"].map((dish) => (
+          {indiancuisine[selectedCuisine].map((dish) => (
             <div class="dishCard">
               <h2>
                 <u>{dish.dishName}</u>
