@@ -193,6 +193,15 @@ export default function App() {
           ))}
         </div>
       </div>
+      <div>
+        <h3 style={{ textAlign: "center" }}>
+          Made With
+          <span role="img" aria-label="">
+            ❤️
+          </span>
+          by Deep Kiran
+        </h3>
+      </div>
     </div>
   );
 }
